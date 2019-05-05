@@ -1,4 +1,21 @@
-# movie-listing
+# Siteminder assignment
+
+## Tech stack choice 
+
+## File structure
+Page , components, Hierarchical , draw.io
+
+## Adaptive Design
+
+## Memoization 
+
+
+## Notes
+Skipped vuex for this assignment
+
+
+## 
+
 
 ## Project setup
 ```
