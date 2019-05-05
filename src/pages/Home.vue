@@ -21,6 +21,7 @@
     
     </el-container>
 </template>
+
 <style scoped>
   .left-nav-bar{
     width:300px;
@@ -62,7 +63,6 @@ import MovieList from './../services/movie.js'
         movies : [],
         movieDetails : {},
         dialogVisible : false,
-        mobileView : false,
       }
     },
     methods : {
@@ -73,6 +73,7 @@ import MovieList from './../services/movie.js'
       },
 
       itemClickEvent(imdbID) {
+        if(screen.width < 480)
         this.dialogVisible = true;
         this.getMovieDetails(imdbID);
       },

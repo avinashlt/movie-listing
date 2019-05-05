@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home.vue matches snapshot 1`] = `
+<el-container>
+  <div class="left-nav-bar">
+    <el-aside style="width: 100%;">
+      <listview-stub items=""></listview-stub>
+    </el-aside>
+  </div>
+  <div class="main-desktop-content">
+    <el-container>
+      <el-main>
+        <contentview-stub moviedetails="[object Object]"></contentview-stub>
+      </el-main>
+    </el-container>
+  </div>
+  <div class="main-mobile-content">
+    <el-dialog title="Movie Details" width="90%">
+      <contentview-stub moviedetails="[object Object]"></contentview-stub>
+    </el-dialog>
+  </div>
+</el-container>
+`;

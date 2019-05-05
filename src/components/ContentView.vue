@@ -1,6 +1,7 @@
 <template>
 <div class="content-view-wrapper">
-  <p v-if="!movieDetails.Title" class="select-movie-text"> Select a movie to view more details</p>
+  <div v-if="!movieDetails.Title" class="select-movie-text"> Select a movie to view more details</div>
+  <div v-else>
     <el-row :gutter="10">
     <el-col :xs="12" :sm="12" :md="12" :lg="12" :xl="12">
       <div class="grid-content" v-if="movieDetails.Title">
@@ -17,11 +18,16 @@
     </el-col>
     <el-col :xs="12" :sm="12" :md="12" :lg="12" :xl="12"><div class="grid-content">
           <div class= "image-wrapper">
-              <el-image class="poster-image" fit="cover" v-if="movieDetails.Poster" v-bind:src="movieDetails.Poster">
+              <el-image class="poster-image" fit="cover" v-if="movieDetails.Poster === 'N/A'" src="https://placeimg.com/300/408/any/sepia'">
               </el-image>
+              <el-image class="poster-image" fit="cover" v-else="movieDetails.Poster" v-bind:src="movieDetails.Poster">
+              </el-image>
+
           </div>
     </div></el-col>
   </el-row>
+  </div>
+
 </div>
 </template>
 <style scoped>
@@ -44,14 +50,6 @@ export default {
     props : ['movieDetails'],
     data() {
         return {
-            title : "Avengers",
-            genre : "Sci-fi",
-            description : "Lorem ipsum lorel ipsum rest kilas asedfe ewrq Lorem ipsum lorel ipsum rest kilas asedfe ewrq Lorem ipsum lorel ipsum rest kilas asedfe ewrq Lorem ipsum lorel ipsum rest kilas asedfe ewrqLorem ipsum lorel ipsum rest kilas asedfe ewrq",
-            language : "English",
-            director : "John Carter",
-            actors : "Smith",
-            duration : "56 min",
-            poster : ""
         };
     }
 }
