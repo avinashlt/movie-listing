@@ -8,7 +8,9 @@ Axios is used as http client to consume rest api
 
 ## File structure
 ![FLOW DIAGRAM](https://i.ibb.co/NxgWnBz/Untitled-Diagram.jpg)
-The application is seggrigated into smart components and dumb component. Smart components are app level components that perform functions and manage data while dumb components focus solely on the UI.
+
+
+The application is segregated into smart components and dumb component. Smart components are app level components that perform functions and manage data while dumb components focus solely on the UI.
 
 A global styling in defined in styles/colors.css file using the css variables.
 
@@ -18,7 +20,7 @@ Service module is set up to make the http call and returns data.
 
 Assets is a module where the images are stored.
 
-The unit testing is impliemented in the test module and can be executed in the below given instructions.
+The unit testing is implemented in the test module and can be executed in the below given instructions.
 
 ## Adaptive Design
 The application supports for mobile and desktop. Multiple layouts are designed to achieve the adaptive design.
