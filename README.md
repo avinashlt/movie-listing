@@ -7,7 +7,7 @@ API are consumed from https://www.omdbapi.com
 Axios is used as http client to consume rest api
 
 ## File structure
-Page , components, Hierarchical , draw.io
+![alt text](https://ibb.co/G7fC3Sj)
 The application is seggrigated into smart components and dumb component. Smart components are app level components that perform functions and manage data while dumb components focus solely on the UI.
 
 A global styling in defined in styles/colors.css file using the css variables.
