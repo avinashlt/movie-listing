@@ -7,8 +7,6 @@ API are consumed from https://www.omdbapi.com
 Axios is used as http client to consume rest api
 
 ## File structure
-![FLOW DIAGRAM](https://i.ibb.co/NxgWnBz/Untitled-Diagram.jpg)
-
 
 The application is segregated into smart components and dumb component. Smart components are app level components that perform functions and manage data while dumb components focus solely on the UI.
 
